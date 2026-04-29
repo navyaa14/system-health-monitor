@@ -1,0 +1,214 @@
+======================
+linux  Infra Monitoring 
+Time: Wed Apr 29 17:06:40 UTC 2026
+Host: DESKTOP-C6RIGKJ
+====================================
+
+1. Checking service status: nginx
+STATUS: nginx is DOWN
+RESULT: Failed to restart nginx
+-- No entries --
+
+2. Checking port 80
+WARNING: Port 80 is NOT listening
+Possible issue: service not bound to port or config problem
+
+3. Checking disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         217G  204G   14G  94% /usr/lib/wsl/drivers
+/dev/sdd       1007G  3.1G  953G   1% /
+none            1.9G   80K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.7M  1.9G   1% /init
+none            1.9G  508K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\             217G  204G   14G  94% /mnt/c
+D:\             245G   14G  232G   6% /mnt/d
+tmpfs           380M   20K  380M   1% /run/user/1000
+STATUS: Disk usage is normal: 1%
+
+4. Checking memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       469Mi       3.2Gi       3.5Mi       180Mi       3.2Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+Checking OOM kill logs:
+
+5. Top CPU consuming processes
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+navyaas+     494  0.3  0.0   4752  3456 pts/0    S+   17:06   0:00 /bin/bash ./monitor.sh
+root           1  0.0  0.3  21712 12384 ?        Ss   16:27   0:00 /sbin/init
+root          95  0.0  0.1  24932  6272 ?        Ss   16:27   0:00 /usr/lib/systemd/systemd-udevd
+root          43  0.0  0.3  50432 15360 ?        S<s  16:27   0:00 /usr/lib/systemd/systemd-journald
+root         287  0.0  0.0   3140  1160 ?        S    16:27   0:00 /init
+root         171  0.0  0.3 1756096 12288 ?       Ssl  16:27   0:00 /usr/libexec/wsl-pro-service -vv
+systemd+     120  0.0  0.1  91024  7552 ?        Ssl  16:27   0:00 /usr/lib/systemd/systemd-timesyncd
+root         194  0.0  0.5 107024 22400 ?        Ssl  16:27   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+systemd+     114  0.0  0.3  21456 12672 ?        Ss   16:27   0:00 /usr/lib/systemd/systemd-resolved
+
+Monitoring completed.
+======================
+linux  Infra Monitoring 
+Time: Wed Apr 29 17:09:46 UTC 2026
+Host: DESKTOP-C6RIGKJ
+====================================
+
+1. Checking service status: ssh
+STATUS: ssh is DOWN
+RESULT: Failed to restart ssh
+-- No entries --
+
+2. Checking port 80
+WARNING: Port 80 is NOT listening
+Possible issue: service not bound to port or config problem
+
+3. Checking disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         217G  204G   14G  94% /usr/lib/wsl/drivers
+/dev/sdd       1007G  3.1G  953G   1% /
+none            1.9G   80K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.7M  1.9G   1% /init
+none            1.9G  516K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\             217G  204G   14G  94% /mnt/c
+D:\             245G   14G  232G   6% /mnt/d
+tmpfs           380M   20K  380M   1% /run/user/1000
+STATUS: Disk usage is normal: 1%
+
+4. Checking memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       490Mi       3.2Gi       3.5Mi       188Mi       3.2Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+Checking OOM kill logs:
+
+5. Top CPU consuming processes
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+navyaas+     818  1.2  0.0   4752  3456 pts/0    S+   17:09   0:00 /bin/bash ./monitor.sh
+root         768  0.1  0.5 370084 20224 ?        Ssl  17:07   0:00 /usr/libexec/packagekitd
+polkitd      773  0.0  0.1 308164  7680 ?        Ssl  17:07   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root           1  0.0  0.3  21712 12384 ?        Ss   16:27   0:00 /sbin/init
+root          95  0.0  0.1  24932  6272 ?        Ss   16:27   0:00 /usr/lib/systemd/systemd-udevd
+root          43  0.0  0.3  50432 15360 ?        S<s  16:27   0:00 /usr/lib/systemd/systemd-journald
+root         287  0.0  0.0   3140  1160 ?        S    16:27   0:00 /init
+root         171  0.0  0.3 1756096 12288 ?       Ssl  16:27   0:00 /usr/libexec/wsl-pro-service -vv
+systemd+     120  0.0  0.1  91024  7552 ?        Ssl  16:27   0:00 /usr/lib/systemd/systemd-timesyncd
+
+Monitoring completed.
+======================
+linux  Infra Monitoring 
+Time: Wed Apr 29 17:10:56 UTC 2026
+Host: DESKTOP-C6RIGKJ
+====================================
+
+1. Checking service status: ssh
+STATUS: ssh is DOWN
+RESULT: Failed to restart ssh
+-- No entries --
+
+2. Checking port 80
+WARNING: Port 80 is NOT listening
+Possible issue: service not bound to port or config problem
+
+3. Checking disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         217G  204G   14G  94% /usr/lib/wsl/drivers
+/dev/sdd       1007G  3.1G  953G   1% /
+none            1.9G   80K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.7M  1.9G   1% /init
+none            1.9G  516K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\             217G  204G   14G  94% /mnt/c
+D:\             245G   14G  232G   6% /mnt/d
+tmpfs           380M   20K  380M   1% /run/user/1000
+STATUS: Disk usage is normal: 1%
+
+4. Checking memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       492Mi       3.2Gi       3.5Mi       189Mi       3.2Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+Checking OOM kill logs:
+
+5. Top CPU consuming processes
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+navyaas+     846  3.2  0.0   4752  3456 pts/0    S+   17:10   0:00 /bin/bash ./monitor.sh
+root         768  0.0  0.5 370084 20224 ?        Ssl  17:07   0:00 /usr/libexec/packagekitd
+root           1  0.0  0.3  21712 12384 ?        Ss   16:27   0:00 /sbin/init
+polkitd      773  0.0  0.1 308164  7680 ?        Ssl  17:07   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root          95  0.0  0.1  24932  6272 ?        Ss   16:27   0:00 /usr/lib/systemd/systemd-udevd
+root          43  0.0  0.3  50432 15360 ?        S<s  16:27   0:00 /usr/lib/systemd/systemd-journald
+root         287  0.0  0.0   3140  1160 ?        S    16:27   0:00 /init
+root         171  0.0  0.3 1756096 12288 ?       Ssl  16:27   0:00 /usr/libexec/wsl-pro-service -vv
+systemd+     120  0.0  0.1  91024  7552 ?        Ssl  16:27   0:00 /usr/lib/systemd/systemd-timesyncd
+
+Monitoring completed.
+======================
+linux  Infra Monitoring 
+Time: Wed Apr 29 17:13:17 UTC 2026
+Host: DESKTOP-C6RIGKJ
+====================================
+
+1. Checking service status: ssh
+STATUS: ssh is running
+
+2. Checking port 80
+WARNING: Port 80 is NOT listening
+Possible issue: service not bound to port or config problem
+
+3. Checking disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         217G  204G   14G  94% /usr/lib/wsl/drivers
+/dev/sdd       1007G  3.1G  953G   1% /
+none            1.9G   80K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.7M  1.9G   1% /init
+none            1.9G  524K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\             217G  204G   14G  94% /mnt/c
+D:\             245G   14G  232G   6% /mnt/d
+tmpfs           380M   20K  380M   1% /run/user/1000
+STATUS: Disk usage is normal: 1%
+
+4. Checking memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       493Mi       3.2Gi       3.5Mi       166Mi       3.2Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+Checking OOM kill logs:
+
+5. Top CPU consuming processes
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.3  22168 12640 ?        Ss   16:27   0:01 /sbin/init
+root         768  0.0  0.5 370084 20224 ?        Ssl  17:07   0:00 /usr/libexec/packagekitd
+polkitd      773  0.0  0.1 308164  7680 ?        Ssl  17:07   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root          95  0.0  0.1  24932  6272 ?        Ss   16:27   0:00 /usr/lib/systemd/systemd-udevd
+root          43  0.0  0.3  50432 15488 ?        S<s  16:27   0:00 /usr/lib/systemd/systemd-journald
+root         287  0.0  0.0   3140  1160 ?        S    16:27   0:00 /init
+message+     159  0.0  0.1   9596  5120 ?        Ss   16:27   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         171  0.0  0.3 1756096 12288 ?       Ssl  16:27   0:00 /usr/libexec/wsl-pro-service -vv
+systemd+     120  0.0  0.1  91024  7552 ?        Ssl  16:27   0:00 /usr/lib/systemd/systemd-timesyncd
+
+Monitoring completed.
